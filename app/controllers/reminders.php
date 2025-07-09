@@ -59,7 +59,7 @@ class Reminders extends Controller {
     
     $data = [
       'subject' => $_POST['subject'],
-      'user_id' => 11 // Fixed to user ID 11
+      'user_id' => 11 
     ];
 
     $R->update_reminder($id, $data);
