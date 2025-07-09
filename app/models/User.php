@@ -53,11 +53,11 @@ class User {
         }
     }
 
-
     public function get_login_counts() {
-      $db = db_connect();
-      return $db->query("SELECT username, COUNT(*) as total FROM log WHERE attempt = 'good' GROUP BY username")->fetchAll(PDO::FETCH_ASSOC);
-    }
+          $db = db_connect();
+          return $db->query("SELECT username, COUNT(*) as total FROM log GROUP BY username")->fetchAll(PDO::FETCH_ASSOC);
+     }
 }
 
 ?>
+
