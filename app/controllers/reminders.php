@@ -68,14 +68,15 @@ class Reminders extends Controller {
   }
 
   public function delete($id = null) {
-    if (!$id) {
+      if (!$id) {
+        header('Location: /reminders');
+        exit;
+      }
+
+      $R = $this->model('Reminder');
+      $R->delete_reminder($id, 11); // Fixed to user ID 11
       header('Location: /reminders');
       exit;
     }
-
-    $R = $this->model('Reminder');
-    $R->delete_reminder($id, 11); // Fixed to user ID 11
-    header('Location: /reminders');
-    exit;
   }
 }
