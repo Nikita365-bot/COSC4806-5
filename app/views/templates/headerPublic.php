@@ -29,7 +29,7 @@ if (isset($_SESSION['auth']) && $_SESSION['auth'] == 1) {
     </button>
     <div class="collapse navbar-collapse" id="navbarNavPublic">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        
+
       </ul>
       <a href="/login" class="btn btn-outline-warning">Login</a>
     </div>
