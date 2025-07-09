@@ -40,12 +40,12 @@ class Reminders extends Controller {
 
     $R = $this->model('Reminder');
     $reminder = $R->get_reminder_by_id($id);
-    
+
     if (!$reminder) {
       header('Location: /reminders');
       exit;
     }
-    
+
     $this->view('reminders/edit', ['reminder' => $reminder]);
   }
 
