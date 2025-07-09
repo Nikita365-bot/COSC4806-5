@@ -79,4 +79,3 @@ class Reminders extends Controller {
       exit;
     }
 }
-}
