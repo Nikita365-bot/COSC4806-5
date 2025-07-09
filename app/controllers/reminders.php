@@ -78,5 +78,5 @@ class Reminders extends Controller {
       header('Location: /reminders');
       exit;
     }
-  }
+}
 }
